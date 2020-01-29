@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SavedTranslationsActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/dir"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/dirs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_below="@id/textView">
+
+    </androidx.appcompat.widget.AppCompatSpinner>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/clear_btn"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_below="@+id/clear_btn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/clear_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clearDB"
+        android:text="@string/clear"
+        app:layout_constraintTop_toBottomOf="@+id/dirs"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_below="@+id/dirs"/>
+
+</RelativeLayout>

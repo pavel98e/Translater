@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Переводчик</string>
+    <string name="dir">Выберите направление перевода:</string>
+    <string name="translate">Перевести</string>
+    <string name="added">Добавлено в избранное</string>
+    <string name="show_saved">Показать сохранённые переводы</string>
+    <string name="clear">Удалить данные</string>
+    <string name="source">Исходный текст:</string>
+    <string name="translated">Переведённый текст:</string>
+</resources>
